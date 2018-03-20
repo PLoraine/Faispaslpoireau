@@ -1,0 +1,33 @@
+#logo{
+	width: 12%;
+	margin-left: 138px;
+}
+ul.nav{
+	background: #E1EFE0;
+	width: 100%;
+
+}
+nav{
+	display: inline-block;
+}
+.log{
+	width: 29%;
+	fill:#7DAB7A;
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+li.nav-item.logo{
+	margin-right: -540px;
+}
+li.nav-item{
+	margin-left: 76px;
+    margin-right: -117px;
+}
+table.table{
+	width: 70%;
+	margin-left: 20%;
+}
+th.entete{
+	color: green;
+}
