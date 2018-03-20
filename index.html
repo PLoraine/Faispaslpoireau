@@ -1,111 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Fais pas le poireau</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Fais pas le poireau</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-
-	<!-- _________________navbar __________________________________-->
-	<!-- <nav class="nav">
-		<li class="nav-link active" href="#">
-		</li> 
-		<li class="nav-link active" href="#">
-		</li> 
-		<li class="nav-link active" href="#">
-		</li> 
-		<li class="nav-link active" href="#">
-		</li> 
-		<li class="nav-link active" href="#">
-		</li> 
-		<li class="nav-link active" href="#">
-		</li> 
-
-	</nav> -->
-	
-			<ul class="nav">
-				<li class="nav-item logo" >
-					<img id="logo" src="image/logo.png" alt="">
-				</li>
-		  <li class="nav-item">
-		    <!-- <a class="nav-link active" href="#">Active</a> -->
-		  </li>
-		  <li class="nav-item">
-		    <!-- <a class="nav-link" href="#">Link</a> -->
-		<img class="log" id="shop" src="image/shop.svg" alt="">
-		  </li>
-		  <li class="nav-item">
-		<img class="log" src="image/plus.svg" alt="">
-			
-		  </li>
-		  <li class="nav-item">
-		<img class="log" src="image/moins.svg" alt="">
-		    <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
-		  </li>
-		  <li class="nav-item">
-		<img class="log" src="image/print.svg" alt="">
-				
-		    <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
-		  </li>
-		  <li class="nav-item">
-		<img class="log" src="image/localisation.svg" alt="">
-		    <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
-		  </li>
-		</ul>
-	
-	<!-- ____________________tableau________________________________ -->
-		<table class="table">
-  <thead>
-    <tr class="table-dark">
-      <th class="entete">Tous</th>
-      <th class="entete">Fruits</th>
-      <th>Légumes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr >
-      <td>Nom</td>
-      <td>Quantité kg ou Unité</td>
-      <td>@mdo</td>
-    	
-    </tr>
-    </tr>
-    <tr class="table-dark">
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr class="table-dark">
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-<!-- _____________________________________________panier page 2________________________________________ -->
-	<div class="modal" tabindex="-1" role="dialog">
+    <!-- _________________navbar __________________________________-->
+    <ul class="nav">
+        <li class="nav-item logo">
+            <img id="logo" src="image/logo.png" alt="">
+        </li>
+        <li class="nav-item">
+            
+        </li>
+        <li class="nav-item">
+          <button type="button" id="shop" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img class="log" src="image/shop.svg" alt="">
+ 		</button>
+        </li>
+        <li class="nav-item">
+        	<button type="button" id="plus" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img class="log" src="image/plus.svg" alt="">
+            </button>
+        </li>
+        <li class="nav-item">
+        	<button type="button" id="moins" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img class="log" src="image/moins.svg" alt="">
+          	</button>
+        </li>
+        <li class="nav-item">
+        	<button type="button" id="print" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img class="log" src="image/print.svg" alt="">
+            </button>
+        </li>
+        <li class="nav-item">
+        	<button type="button" id="localisation" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <img class="log" src="image/localisation.svg" alt="">
+            </button>
+        </li>
+    </ul>
+    <!-- ____________________tableau________________________________ -->
+    <table class="table">
+        <thead>
+            <tr class="table-dark">
+                <th class="entete">Tous</th>
+                <th class="entete">Fruits</th>
+                <th>Légumes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nom</td>
+                <td>Quantité kg ou Unité</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Ail</td>
+                <td>30</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Brocoli</td>
+                <td>20</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Chou de Bruxelle</td>
+                <td>12</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Concombre</td>
+                <td>6,3</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Cornichon</td>
+                <td>10,6</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Epinard</td>
+                <td>5,2</td>
+                <td></td>
+	            </tr>
+	        <tr class="table-dark">
+	                <td>Haricots</td>
+	                <td>12,4</td>
+	                <td></td>
+	        </tr>
+	        <tr class="table-dark">
+	                <td>Mâche</td>
+	                <td>3,5</td>
+	                <td></td>
+	        </tr>
+	        <tr class="table-dark">
+	                <td>Patate Douce</td>
+	                <td>5</td>
+	                <td></td>
+	        </tr>
+	        </tr>
+	        <tr class="table-dark">
+	                <td>Pomme de terre</td>
+	                <td>120</td>
+	                <td></td>
+	        </tr>
+        </tbody>
+    </table>
+    <!-- _____________________________________________panier page 2________________________________________ -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Nouvel vente</h5>
+        </div>
+       
+        	<div>
+        		<div class="row" >
+        			<div class="col" id="time">
+        			<p>Heure</p>
+        				<input type="time">
+        			</div>
+        			<div class="col">
+        				<p>Ville</p>
+        				<input type="text">
+        			</div>
+        	</div>
+        		<hr>
+        		<div>
+        			<div class="row" >
+        			<div class="col" id="quant1" >
+        			<p>Quantité</p>
+        				<input type="number">
+        			</div>
+
+        			<div class="col">
+        				<p>Fuit/Légume</p>
+        				<input type="text">
+        			</div>
+
+        			<div class="row" >
+        			<div class="col" id="quant2" >
+        			<p>Quantité</p>
+        				<input type="number">
+        			</div>
+
+        			<div class="col">
+        				<p>Fuit/Légume</p>
+        				<input type="text">
+        			</div>
+
+        			<div>
+        				<div class="row" >
+        				<div class="col" id="quant3">
+        				<p>Quantité</p>
+        					<input type="number">
+        				</div>
+        				
+        				<div class="col">
+        					<p>Fuit/Légume</p>
+        					<input type="text">
+        				</div>
+        				</div>        	
+        			</div>
+        	
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      	<button type="button" class="btn btn-danger">Annuler</button>
+        <button type="button" class="btn btn-primary">Ajouter un élément</button>
+        <button type="button" class="btn btn-success">Valider la vente</button>
+        
       </div>
     </div>
   </div>
 </div>
-<!-- nd -->
-	<script src="js/app.js"></script>
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- nd -->
+    <script src="js/app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
