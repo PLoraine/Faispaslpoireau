@@ -31,3 +31,55 @@ table.table{
 th.entete{
 	color: green;
 }
+#shop{
+	 background-image: url('image/shop.svg');
+	background-color: transparent;
+	border-style:none;
+	width: 15%;
+	
+}
+#plus{
+	 background-image: url('image/plus.svg');
+	background-color: transparent;
+	border-style:none;
+	width: 15%;
+		
+}
+#moins{
+	background-image: url('image/moins.svg');
+	background-color: transparent;
+	border-style:none;
+	width: 15%;
+	
+}
+#print{
+	 background-image: url('image/print.svg');
+	background-color: transparent;
+	border-style:none;
+	width: 15%;
+	
+}
+#localisation{
+	 background-image: url('image/localisation.svg');
+	background-color: transparent;
+	border-style:none;
+	width: 15%;
+	
+}
+
+#time{
+	margin-left: 10px;
+}
+#quant1{
+	margin-left: 5%;
+}
+#quant2{
+	margin-left: 9%;
+}
+#quant3{
+	margin-left: 5%;
+}
+input{
+	border-radius: 6px 7px;
+
+}
