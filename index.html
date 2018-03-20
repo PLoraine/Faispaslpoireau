@@ -15,31 +15,30 @@
             <img id="logo" src="image/logo.png" alt="">
         </li>
         <li class="nav-item">
-            
         </li>
         <li class="nav-item">
-          <button type="button" id="shop" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            <img class="log" src="image/shop.svg" alt="">
- 		</button>
-        </li>
-        <li class="nav-item">
-        	<button type="button" id="plus" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            <img class="log" src="image/plus.svg" alt="">
+            <button type="button" id="shop" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <img class="log" src="image/shop.svg" alt="">
             </button>
         </li>
         <li class="nav-item">
-        	<button type="button" id="moins" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            <img class="log" src="image/moins.svg" alt="">
-          	</button>
-        </li>
-        <li class="nav-item">
-        	<button type="button" id="print" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            <img class="log" src="image/print.svg" alt="">
+            <button type="button" id="plus" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <img class="log" src="image/plus.svg" alt="">
             </button>
         </li>
         <li class="nav-item">
-        	<button type="button" id="localisation" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            <img class="log" src="image/localisation.svg" alt="">
+            <button type="button" id="moins" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <img class="log" src="image/moins.svg" alt="">
+            </button>
+        </li>
+        <li class="nav-item">
+            <button type="button" id="print" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <img class="log" src="image/print.svg" alt="">
+            </button>
+        </li>
+        <li class="nav-item">
+            <button type="button" id="localisation" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <img class="log" src="image/localisation.svg" alt="">
             </button>
         </li>
     </ul>
@@ -87,108 +86,98 @@
                 <td>Epinard</td>
                 <td>5,2</td>
                 <td></td>
-	            </tr>
-	        <tr class="table-dark">
-	                <td>Haricots</td>
-	                <td>12,4</td>
-	                <td></td>
-	        </tr>
-	        <tr class="table-dark">
-	                <td>Mâche</td>
-	                <td>3,5</td>
-	                <td></td>
-	        </tr>
-	        <tr class="table-dark">
-	                <td>Patate Douce</td>
-	                <td>5</td>
-	                <td></td>
-	        </tr>
-	        </tr>
-	        <tr class="table-dark">
-	                <td>Pomme de terre</td>
-	                <td>120</td>
-	                <td></td>
-	        </tr>
+            </tr>
+            <tr class="table-dark">
+                <td>Haricots</td>
+                <td>12,4</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Mâche</td>
+                <td>3,5</td>
+                <td></td>
+            </tr>
+            <tr class="table-dark">
+                <td>Patate Douce</td>
+                <td>5</td>
+                <td></td>
+            </tr>
+            </tr>
+            <tr class="table-dark">
+                <td>Pomme de terre</td>
+                <td>120</td>
+                <td></td>
+            </tr>
         </tbody>
     </table>
     <!-- _____________________________________________panier page 2________________________________________ -->
     <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Nouvel vente</h5>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nouvel vente</h5>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col" id="time">
+                            <p>Heure</p>
+                            <input type="time">
+                        </div>
+                        <div class="col">
+                            <p>Ville</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="row">
+                            <div class="col" id="quant1">
+                                <p>Quantité</p>
+                                <input type="number">
+                            </div>
+                            <div class="col">
+                                <p>Fuit/Légume</p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col" id="quant2">
+                                    <p>Quantité</p>
+                                    <input type="number">
+                                </div>
+                                <div class="col">
+                                    <p>Fuit/Légume</p>
+                                    <input type="text">
+                                </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col" id="quant3">
+                                        <p>Quantité</p>
+                                        <input type="number">
+                                    </div>
+                                    <div class="col">
+                                        <p>Fuit/Légume</p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                           </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body">
+               </div>
+               <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">Annuler</button>
+                    <button type="button" class="btn btn-primary">Ajouter un élément</button>
+                    <button type="button" class="btn btn-success">Vali</button>
+               </div>
+           </div>
         </div>
-       
-        	<div>
-        		<div class="row" >
-        			<div class="col" id="time">
-        			<p>Heure</p>
-        				<input type="time">
-        			</div>
-        			<div class="col">
-        				<p>Ville</p>
-        				<input type="text">
-        			</div>
-        	</div>
-        		<hr>
-        		<div>
-        			<div class="row" >
-        			<div class="col" id="quant1" >
-        			<p>Quantité</p>
-        				<input type="number">
-        			</div>
-
-        			<div class="col">
-        				<p>Fuit/Légume</p>
-        				<input type="text">
-        			</div>
-
-        			<div class="row" >
-        			<div class="col" id="quant2" >
-        			<p>Quantité</p>
-        				<input type="number">
-        			</div>
-
-        			<div class="col">
-        				<p>Fuit/Légume</p>
-        				<input type="text">
-        			</div>
-
-        			<div>
-        				<div class="row" >
-        				<div class="col" id="quant3">
-        				<p>Quantité</p>
-        					<input type="number">
-        				</div>
-        				
-        				<div class="col">
-        					<p>Fuit/Légume</p>
-        					<input type="text">
-        				</div>
-        				</div>        	
-        			</div>
-        	
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-      	<button type="button" class="btn btn-danger">Annuler</button>
-        <button type="button" class="btn btn-primary">Ajouter un élément</button>
-        <button type="button" class="btn btn-success">Valider la vente</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- nd -->
-    <script src="js/app.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+     </div>
+                <!-- nd -->
+<script src="js/app.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
